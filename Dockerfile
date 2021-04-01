@@ -1,6 +1,6 @@
 FROM mailtrain/mailtrain
 
-RUN apk add --no-cache nginx gettext
+RUN apk add --no-cache nginx gettext redis
 
 RUN mkdir /etc/nginx/templates /run/nginx
 COPY mailtrain.conf.template /etc/nginx/templates
